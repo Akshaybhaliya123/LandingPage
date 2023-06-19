@@ -1,0 +1,173 @@
+
+/* Basic CSS for the landing page layout */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior:smooth;
+}
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.4;    
+}
+#logo{
+  margin: 10px 50px; 
+}
+#logo img{
+   height: 50px;
+   margin: 2px 20px;
+   margin-right: 10px;
+   transition: none;
+   clip-path: circle(50% at 50% 50%);
+}
+#logo h3{
+    color: white;
+    margin-left: 20px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;   
+}
+#navbar ul li a{
+    color: white;
+   display: block;
+   padding: 3px 20px;
+   text-decoration: none;
+   border-radius: 20px;
+}
+#navbar ul li a:hover{
+ color: black;
+ background-color: white;
+}
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    height: 267px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#Home::before{
+    content: "";
+    position: absolute;
+    background: url('OIP.jfif') no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    opacity: 1; 
+    top: 0px;
+    left: 0px;  
+}
+#Home h1{
+   color: white;
+   text-align: center;
+   margin-top: 60px;
+}
+#Home p{
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: cursive;
+}
+.about-image{
+    display: flex;
+    background-color: rgb(243, 215, 237);
+}
+.about-image img{
+    height: 250px;
+    width: 30%;
+    padding: 10px;
+    margin: auto;
+}
+#about{
+    height: 250px;
+    width: 100%;
+    padding: 2px 5px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+#about h1{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: blue;
+}
+#about p{
+    font-family: cursive;
+    font-size: 1rem;
+}
+#ourClient h1{
+    text-align: center;
+    color: blue;
+}
+#client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clients-item{
+    padding: 34px;
+}
+#contact{
+    height: 150px;
+    width: 100%;
+    background-color: rgb(199, 190, 190);
+    color: white;
+}
+#contact h1{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: blue;
+}
+#fname{
+    padding: 10px;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+#lname{
+    padding: 10px;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+#email{
+    padding: 10px;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+#message{
+    padding: 10px;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+#submit{
+    padding: 10px;
+    margin-top: 5px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
